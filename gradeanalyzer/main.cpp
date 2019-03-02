@@ -9,10 +9,9 @@ using namespace io;
 
 int main()
 {
-    cout << "Hello world!" << endl;
     Roster newRoster;
     newRoster.getStudentsWithGrade();
-    FileReader reader("/home/zach/gradeanalyzertestfiles/test.csv");
+    FileReader reader("/home/gradeanalyzertestfiles/test.csv");
     reader.readInFileLines();
     return 0;
 }

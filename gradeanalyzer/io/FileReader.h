@@ -7,18 +7,19 @@
 #include <iostream>
 using namespace std;
 
-namespace io {
+namespace io
+{
 class FileReader
 {
-    private:
-        string fileName;
-        //vector<string> data;
-        //vector<string> parseData();
+private:
+    string fileName;
+    //vector<string> data;
+    //vector<string> parseData();
 
-    public:
-        FileReader(const string& fileName);
-        virtual ~FileReader();
-        vector<string> readInFileLines();
+public:
+    FileReader(const string& fileName);
+    virtual ~FileReader();
+    vector<string> readInFileLines();
 };
 }
 

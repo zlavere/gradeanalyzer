@@ -1,6 +1,7 @@
 #include "FileReader.h"
 
-namespace io {
+namespace io
+{
 FileReader::FileReader(const string& fileName)
 {
     this->fileName = fileName;
@@ -13,7 +14,8 @@ vector<string> FileReader::readInFileLines()
     vector<string> fileLines;
     stream.open(this->fileName);
 
-    if(!stream){
+    if(!stream)
+    {
         cout << "Error" << endl;
     }
 
