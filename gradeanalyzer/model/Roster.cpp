@@ -5,7 +5,6 @@ namespace model
 
 Roster::Roster()
 {
-    this->students = vector<Student>();
 }
 
 vector<Student> Roster::getStudentsWithGradeA()
@@ -28,6 +27,16 @@ void Roster::getStudentsWithGrade()
     {
         cout << "Luke Skywalker" << endl;
     }
+}
+
+void Roster::addStudent(const Student& student)
+{
+    this->students.push_back(student);
+}
+
+vector<Student> Roster::getStudents() const
+{
+    return this->students;
 }
 
 Roster::~Roster()

@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 
-#include "Student.h";
+#include "Student.h"
 using namespace model;
 
 namespace model
@@ -19,7 +19,9 @@ public:
     Roster();
     virtual ~Roster();
     vector<Student> getStudentsWithGradeA();
+    vector<Student> getStudents() const;
     void getStudentsWithGrade();
+    void addStudent(const Student& student);
     size_t size() const;
 };
 }

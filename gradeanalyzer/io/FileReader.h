@@ -13,13 +13,16 @@ class FileReader
 {
 private:
     string fileName;
-    //vector<string> data;
-    //vector<string> parseData();
+    vector<vector<string>> data;
+    void parseFileLines();
+    vector<string> readInFileLines();
 
 public:
-    FileReader(const string& fileName);
+    FileReader();
+    //FileReader(const string& fileName);
     virtual ~FileReader();
-    vector<string> readInFileLines();
+    vector<vector<string>> getData();
+    void setFileName(const string& fileName);
 };
 }
 

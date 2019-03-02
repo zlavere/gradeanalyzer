@@ -13,6 +13,11 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="./" />
+					<Add directory="model" />
+					<Add directory="io" />
+					<Add directory="controller" />
 				</Compiler>
 			</Target>
 		</Build>
@@ -20,7 +25,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="controller/StudentImportController.cpp" />
+		<Unit filename="controller/StudentImportController.h" />
+		<Unit filename="io/FileReader.cpp" />
+		<Unit filename="io/FileReader.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="model/Roster.cpp" />
+		<Unit filename="model/Roster.h" />
+		<Unit filename="model/Student.cpp" />
+		<Unit filename="model/Student.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
