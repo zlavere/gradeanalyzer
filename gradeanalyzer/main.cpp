@@ -11,7 +11,7 @@ int main()
 {
     Roster newRoster;
     newRoster.getStudentsWithGrade();
-    FileReader reader("/home/gradeanalyzertestfiles/test.csv");
+    FileReader reader("/home/zach/gradeanalyzertestfiles/test.csv");
     reader.readInFileLines();
     return 0;
 }

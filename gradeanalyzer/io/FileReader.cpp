@@ -12,19 +12,19 @@ vector<string> FileReader::readInFileLines()
     ifstream stream;
     string line;
     vector<string> fileLines;
-    stream.open(this->fileName);
 
+    stream.open(this->fileName);
     if(!stream)
     {
-        cout << "Error" << endl;
+        cout << "There was an error finding this file." << endl;
     }
-
     while(stream >> line)
     {
         cout << line << endl;
         fileLines.push_back(line);
     }
     stream.close();
+
     return fileLines;
 }
 
