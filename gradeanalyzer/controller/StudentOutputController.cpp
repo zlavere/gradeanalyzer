@@ -9,7 +9,7 @@ StudentOutputController::StudentOutputController()
 {
     this->columnWidth = 20;
     this->countOfColumns = 4;
-    this->flagGrade;
+    this->gradeFlag;
 }
 
 StudentOutputController::StudentOutputController(const string& fileName) : StudentOutputController()
@@ -82,7 +82,13 @@ string& StudentOutputController::createColumnsOfStudents(vector<Student> student
     for(Student curr : students)
     {
         string fullName = curr.getFirstName() + " " + curr.getLastName();
-        cout << setw(this->columnWidth) << fullName;
+        if(this->gradeFlag)
+        {
+            cout << setw(this->columnWidth) << fullName  << " : " << curr.getGrade();
+        } else {
+            cout << setw(this->columnWidth) << fullName;
+        }
+
         i++;
         if(i == this->countOfColumns)
         {
@@ -93,7 +99,7 @@ string& StudentOutputController::createColumnsOfStudents(vector<Student> student
     cout << endl;
 }
 
-void StudentOutputControlle::setGradeFlag()
+void StudentOutputController::setGradeFlag()
 {
     this->gradeFlag = true;
 }

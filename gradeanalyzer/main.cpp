@@ -1,4 +1,4 @@
-#define DEBUG
+//#define DEBUG
 
 #include <iostream>
 using namespace std;
@@ -10,7 +10,7 @@ using namespace controller;
 int main(int argc, char* argv[])
 {
 
-    ArgDispatchController dispatch(argc, argv);
+ArgDispatchController dispatch(argc, argv);
 
 #ifdef DEBUG
     cout << "Arguments Provided: " << argc << endl;

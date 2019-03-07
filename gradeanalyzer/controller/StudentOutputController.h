@@ -18,6 +18,7 @@ private:
     bool IsCGrade(int grade);
     bool IsDGrade(int grade);
     string& createColumnsOfStudents(vector<Student> students);
+    bool gradeFlag;
 
 public:
     StudentOutputController();
@@ -28,6 +29,7 @@ public:
     void sendUsageStatement();
     void setOutFileName(const string& outFile);
     void formatRosterData(const Roster& roster);
+    void setGradeFlag();
 };
 }
 
