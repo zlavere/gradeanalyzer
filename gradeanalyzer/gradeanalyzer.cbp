@@ -18,6 +18,7 @@
 					<Add directory="model" />
 					<Add directory="io" />
 					<Add directory="controller" />
+					<Add directory="io/" />
 				</Compiler>
 			</Target>
 		</Build>
@@ -29,6 +30,8 @@
 		<Unit filename="controller/StudentImportController.h" />
 		<Unit filename="io/FileReader.cpp" />
 		<Unit filename="io/FileReader.h" />
+		<Unit filename="io/FileWriter.cpp" />
+		<Unit filename="io/FileWriter.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="model/Roster.cpp" />
 		<Unit filename="model/Roster.h" />

@@ -22,6 +22,7 @@ public:
     vector<Student> getStudents() const;
     void getStudentsWithGrade();
     void addStudent(const Student& student);
+    void addStudent(const string& firstName, const string& lastName, int grade);
     size_t size() const;
 };
 }

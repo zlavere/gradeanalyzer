@@ -39,9 +39,9 @@ vector<string> FileReader::readInFileLines()
 
 void FileReader::parseFileLines()
 {
-
     vector<string> fileLines = this->readInFileLines();
     this->data.reserve(fileLines.size());
+
     for(size_t i = 0; i < fileLines.size(); i++)
     {
         vector<string> dataContainer;
